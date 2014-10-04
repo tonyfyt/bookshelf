@@ -1,4 +1,4 @@
-package com.tonyfyt.bookshelf;
+package com.tonyfyt.bookshelf.controller;
 
 import com.tonyfyt.bookshelf.dao.BookDao;
 import com.tonyfyt.bookshelf.model.Book;
