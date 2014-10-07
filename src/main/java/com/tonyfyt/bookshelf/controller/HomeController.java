@@ -39,7 +39,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/edit", method = RequestMethod.GET)
-	public ModelAndView editUser(HttpServletRequest request) {
+	public ModelAndView editBook(HttpServletRequest request) {
 		int bookId = Integer.parseInt(request.getParameter("id"));
 		Book book = bookDao.get(bookId);
 		ModelAndView model = new ModelAndView("BookForm");
@@ -48,7 +48,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/delete", method = RequestMethod.GET)
-	public ModelAndView deleteUser(HttpServletRequest request) {
+	public ModelAndView deleteBook(HttpServletRequest request) {
 		int bookId = Integer.parseInt(request.getParameter("id"));
 		bookDao.delete(bookId);
 		return new ModelAndView("redirect:/");		
