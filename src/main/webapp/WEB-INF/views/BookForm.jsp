@@ -11,7 +11,7 @@
 	<div align="center">
 		<h1>Add/Edit Book</h1>
 		<table>
-			<form:form action="save" method="post" modelAttribute="book">
+			<form:form action="update" method="post" modelAttribute="book">
 			<form:hidden path="id"/>
 			<tr>
 				<td>Author, Last Name:</td>
@@ -27,7 +27,7 @@
 			</tr>
 			<tr>
 				<td>Year:</td>
-				<td><form:password path="year"/></td>
+				<td><form:input path="year"/></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center">

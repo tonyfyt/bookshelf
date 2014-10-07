@@ -24,8 +24,8 @@
 	        	<tr>
 	        		
 	        		<td>${book.authorln}, ${book.authorfn}</td>
-					<td>${book.title}}</td>
-					<td>${book.year}.email}</td>
+					<td>${book.title}</td>
+					<td>${book.year}</td>
 					<td>
 						<a href="edit?id=${book.id}">Edit</a>
 						&nbsp;&nbsp;&nbsp;&nbsp;
