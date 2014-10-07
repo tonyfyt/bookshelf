@@ -1,11 +1,24 @@
 package com.tonyfyt.bookshelf.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "books")
+
 public class Book {
     private int id;
     private String authorln;
     private String authorfn;
     private String title;
     private int year;
+    
+    @Id
+	@GeneratedValue
+	@Column(name = "BOOK_ID")
 	public int getId() {
 		return id;
 	}
