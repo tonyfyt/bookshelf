@@ -54,9 +54,9 @@ public class HomeController {
 		return new ModelAndView("redirect:/");		
 	}
 	
-	@RequestMapping(value = "/update", method = RequestMethod.POST)
-	public ModelAndView updateBook(@ModelAttribute Book book) {
-		bookDao.update(book);
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	public ModelAndView saveBook(@ModelAttribute Book book) {
+		bookDao.saveOrUpdate(book);
 		return new ModelAndView("redirect:/");
 	}	
 }

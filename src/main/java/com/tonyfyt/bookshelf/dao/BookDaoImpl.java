@@ -54,8 +54,8 @@ public class BookDaoImpl implements BookDao {
 
 	@Override
 	@Transactional
-	public void update(Book book) {
-		sessionFactory.getCurrentSession().Update(book);
+	public void saveOrUpdate(Book book) {
+		sessionFactory.getCurrentSession().saveOrUpdate(book);
 		
 	}
 

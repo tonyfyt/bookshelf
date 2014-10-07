@@ -11,7 +11,7 @@
 	<div align="center">
 		<h1>Add/Edit Book</h1>
 		<table>
-			<form:form action="update" method="post" modelAttribute="book">
+			<form:form action="save" method="post" modelAttribute="book">
 			<form:hidden path="id"/>
 			<tr>
 				<td>Author, Last Name:</td>
@@ -31,7 +31,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-					<input type="submit" value="Update">
+					<input type="submit" value="Save">
 				</td>
 			</tr>			
 			</form:form>

@@ -9,7 +9,7 @@ public interface BookDao {
 
 	public Book get(int id);
 
-	public void update(Book book);
+	public void saveOrUpdate(Book book);
 
 	public void delete(int id);
 }
